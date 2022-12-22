@@ -38,12 +38,6 @@ function findElement(arr, value) {
 function generateOdds(len) {
   const arr = new Array(len);
   const result = arr.fill(0).map((elem, index) => 2 * index + 1);
-  // const arr = [];
-  // for (let i = 1; i <= len;) {
-  //   arr.push(odd);
-  //   odd += 2;
-  //   i += 1;
-  // }
   return result;
 }
 
@@ -60,8 +54,8 @@ function generateOdds(len) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(/* arr */) {
-  throw new Error('Not implemented');
+function doubleArray(arr) {
+  return [...arr, ...arr];
 }
 
 
@@ -76,10 +70,10 @@ function doubleArray(/* arr */) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfPositives(arr) {
+  const posArr = arr.filter((num) => num > 0);
+  return posArr;
 }
-
 /**
  * Returns the array with strings only in the specified array (in original order)
  *
