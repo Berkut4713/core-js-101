@@ -22,10 +22,7 @@
 function getRectangleArea(width, height) {
   // throw new Error('Not implemented');
   return width * height;
-}
-
-
-/**
+}/**
  * Returns a circumference of circle given by radius.
  *
  * @param {number} radius
