@@ -334,7 +334,7 @@ function getDigitalRoot(num) {
   for (let i = 0; i < numString.length; i += 1) {
     sum += +numString[i];
   }
-  return getDigitalRoot(sum);git 
+  return getDigitalRoot(sum);
 }
 
 
@@ -361,6 +361,22 @@ function getDigitalRoot(num) {
  */
 function isBracketsBalanced(/* str */) {
   throw new Error('Not implemented');
+  // const Brackets = {
+  //   '(': ')',
+  //   '[': ']',
+  //   '{': '}',
+  //   '<': '>',
+  // };
+  // const closingBrackets = Object.values(Brackets);
+  // const stack = [];
+  // for (let elem = 0; elem < str.length; elem += 1) {
+  //   if (Brackets[elem]) {
+  //     stack.push(elem);
+  //   } else if (closingBrackets.includes(elem) && elem !== Brackets[stack.pop()]) {
+  //     return false;
+  //   }
+  // }
+  // return !stack.length;
 }
 
 
